@@ -1,0 +1,42 @@
+{
+	"ImportPath": "github.com/couponmanager",
+	"GoVersion": "go1.14",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/codegangsta/negroni",
+			"Comment": "v2.0.1-2-g7de0dfc",
+			"Rev": "7de0dfc1ff7915504e21f6293132176f90e7cb40"
+		},
+		{
+			"ImportPath": "github.com/go-playground/locales",
+			"Comment": "v0.13.0",
+			"Rev": "9f105231d3a5f6877a2bf8321dfa15ea6f844b1b"
+		},
+		{
+			"ImportPath": "github.com/go-playground/locales/currency",
+			"Comment": "v0.13.0",
+			"Rev": "9f105231d3a5f6877a2bf8321dfa15ea6f844b1b"
+		},
+		{
+			"ImportPath": "github.com/go-playground/universal-translator",
+			"Comment": "v0.17.0",
+			"Rev": "f87b1403479a348651dbf5f07f5cc6e5fcf07008"
+		},
+		{
+			"ImportPath": "github.com/go-playground/validator",
+			"Comment": "v10.3.0",
+			"Rev": "ea924ce89a4774b8017143b34b946db46add9df1"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.7.4-1-g948bec3",
+			"Rev": "948bec34b5168796bf3fc4dbb09215baa970351a"
+		},
+		{
+			"ImportPath": "github.com/leodido/go-urn",
+			"Comment": "v1.2.0",
+			"Rev": "a0f5013415294bb94553821ace21a1a74c0298cc"
+		}
+	]
+}
