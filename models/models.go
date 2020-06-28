@@ -8,6 +8,6 @@ type (
 	// Coupon struct
 	Coupon struct {
 		ItemIds []string `json:"item_ids" validate:"required"`
-		Amount  int      `json:"amount" validate:"required,numeric,gte=0,lte=999"`
+		Amount  float64  `json:"amount" validate:"required,numeric"`
 	}
 )

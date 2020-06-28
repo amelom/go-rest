@@ -9,7 +9,7 @@ import (
 )
 
 func TestOrderMap(t *testing.T) {
-	items := map[string]int{
+	items := map[string]float64{
 		"MLA0": 25,
 		"MLA1": 10,
 		"MLA2": 15,

@@ -19,22 +19,22 @@ type CouponService struct {
 func (r *CouponService) Calculate(user *models.Coupon) models.Coupon {
 	var Response models.Coupon
 	client := &http.Client{}
-	items := make(map[string]int)
+	items := make(map[string]float64)
 	for _, i := range user.ItemIds {
 		if items[i] == 0 {
 			n := GetItems(i, client)
 			if n.id != "" {
-				items[n.id] = int(n.price)
+				items[n.id] = n.price
 			}
 		}
 	}
 
 	arrIdsItems := []string{}
-	count := 0
+	var count float64 = 0
 	p := orderMap(&items)
 	for _, k := range p {
-		if count+k.Value <= user.Amount {
-			count = count + k.Value
+		if count+float64(k.Value) <= user.Amount {
+			count = count + float64(k.Value)
 			arrIdsItems = append(arrIdsItems, k.Key)
 		}
 	}
