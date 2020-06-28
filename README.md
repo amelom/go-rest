@@ -25,8 +25,13 @@ EXPOSE 8080
 
 carpetas:
 
--common: implementa algunas funciones de utilidad y proporciona lógica de inicialización para la aplicacion
--controllers: implementa los datos de los controladores de aplicaciones 
--service: implementa la logica de negocio
--models: describe el modelo de datos de la aplicacion
--routers: implementa los enrutadores de solicitud HTTP para la API RESTful
+### common:
+ implementa algunas funciones de utilidad y proporciona lógica de inicialización para la aplicacion
+### controllers: 
+ implementa los datos de los controladores de aplicaciones 
+### service: 
+ implementa la logica de negocio
+### models: 
+ describe el modelo de datos de la aplicacion
+### routers: 
+  implementa los enrutadores de solicitud HTTP para la API RESTful
