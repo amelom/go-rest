@@ -15,10 +15,10 @@ GOPATH /go/src/github.com/couponmanager
 ##  obtenga godep para administrar las dependencias
 go get github.com/tools/godep
 
-# Instale godep dependecias
+## Instale godep dependecias
 godep restore 
 
-##  corra el siguiente comando para obtener el archivo ejecutable
+###  corra el siguiente comando para obtener el archivo ejecutable
 go install github.com/couponmanager
 
 ##  ejecute dicho archivo
