@@ -1,29 +1,33 @@
 # copee los archivos en su espacio de trabajo
 ADD . /go/src/github.com/couponmanager
+# Go 
 
-# copee el archivo de configuración
+Este repositorio contiene el código del de una aplicación REST con funcionalidad especifica 
+
+
+##  copee el archivo de configuración
 ADD . /go/config/config.json
 
-# agrefue la ruta local a las variables de entorno
+##  agrefue la ruta local a las variables de entorno
 GOPATH /go/src/github.com/couponmanager
 
-# obtenga godep para administrar las dependencias
+##  obtenga godep para administrar las dependencias
 go get github.com/tools/godep
 
 # Instale godep dependecias
 godep restore 
 
-# corra el siguiente comando para obtener el archivo ejecutable
+##  corra el siguiente comando para obtener el archivo ejecutable
 go install github.com/couponmanager
 
-# ejecute dicho archivo
+##  ejecute dicho archivo
 /go/bin/taskmanager
 
-# de acuerdo a el archivo de configuracion el servicio queda expuesto en el puerto 8080.
+## de acuerdo a el archivo de configuracion el servicio queda expuesto en el puerto 8080.
 EXPOSE 8080
 
 
-carpetas:
+##  carpetas:
 
 ### common:
  implementa algunas funciones de utilidad y proporciona lógica de inicialización para la aplicacion
