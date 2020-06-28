@@ -1,12 +1,13 @@
-# copee los archivos en su espacio de trabajo
-ADD . /go/src/github.com/couponmanager
 # Go 
 
 Este repositorio contiene el código del de una aplicación REST con funcionalidad especifica 
 
+# copee los archivos en su espacio de trabajo
+ . /go/src/github.com/couponmanager
+
 
 ##  copee el archivo de configuración
-ADD . /go/config/config.json
+ . /go/config/config.json
 
 ##  agrefue la ruta local a las variables de entorno
 GOPATH /go/src/github.com/couponmanager
