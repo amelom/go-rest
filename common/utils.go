@@ -49,6 +49,7 @@ func DisplayAppError(w http.ResponseWriter, handlerError error, message string, 
 
 // AppConfig holds the configuration values from config.json file
 var AppConfig configuration
+var urlVal = "config/config.json"
 
 // Initialize AppConfig
 func initConfig() {
@@ -57,7 +58,7 @@ func initConfig() {
 
 // Reads config.json and decode into AppConfig
 func loadAppConfig() {
-	file, err := os.Open("config/config.json")
+	file, err := os.Open(urlVal)
 	defer file.Close()
 	if err != nil {
 		log.Fatalf("[loadConfig]: %s\n", err)

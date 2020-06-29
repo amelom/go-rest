@@ -17,24 +17,23 @@ func TestCalculate(t *testing.T) {
 		Coupons := new(models.Coupon)
 		Coupons.ItemIds = a
 		Coupons.Amount = 100
-		log.Println(Coupons)
 
 		repo := &CouponService{Coupons}
 		repo.Calculate(Coupons)
 	})
 }
 
-// func TestCalculateArryFull(t *testing.T) {
-// 	t.Run("test array full", func(t *testing.T) {
-// 		var a []string
-// 		a = append(a, "LM")
-// 		Coupons := new(models.Coupon)
-// 		Coupons.ItemIds = a
-// 		Coupons.Amount = 100
-// 		log.Println(Coupons)
+func TestCalculateArryFull(t *testing.T) {
+	t.Run("test array full", func(t *testing.T) {
+		var a []string
+		a = append(a, "LM")
+		Coupons := new(models.Coupon)
+		Coupons.ItemIds = a
+		Coupons.Amount = 100
+		log.Println(Coupons)
 
-// 		repo := &CouponService{Coupons}
+		repo := &CouponService{Coupons}
 
-// 		repo.Calculate(Coupons)
-// 	})
-// }
+		repo.Calculate(Coupons)
+	})
+}

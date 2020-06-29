@@ -24,7 +24,7 @@ func (c *ClientMock) Do(req *http.Request) (*http.Response, error) {
 	return http.Get(ts.URL)
 }
 
-func TestMakeRequest(t *testing.T) {
+func TestGetItems(t *testing.T) {
 	t.Run("it should return mock value", func(t *testing.T) {
 		clientMock := &ClientMock{}
 		got := GetItems("LM11", clientMock)

@@ -6,7 +6,6 @@ package controllers
 
 import (
 	"encoding/json"
-	"log"
 	"net/http"
 
 	"github.com/couponmanager/common"
@@ -38,7 +37,7 @@ func GetCoupon(w http.ResponseWriter, r *http.Request) {
 			w,
 			err,
 			"malformed dating",
-			500,
+			400,
 		)
 		return
 	}
@@ -46,7 +45,6 @@ func GetCoupon(w http.ResponseWriter, r *http.Request) {
 	repo := &data.CouponService{*user}
 	// Calculate the value
 	cal := repo.Calculate(*user)
-	log.Println(cal.ItemIds)
 	if j, err := json.Marshal(cal); err != nil {
 		common.DisplayAppError(
 			w,
