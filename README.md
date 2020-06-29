@@ -1,4 +1,26 @@
-# Go 
+# Consumo API
+
+### POST
+```
+https://coupon-281723.uc.r.appspot.com/coupon/
+```
+#### Request body json
+```
+{
+        "item_ids": ["MLA862633782", "MLA862633781","MLA862633783"],
+        "amount":46000
+}
+```
+#### Response
+```
+{
+    "item_ids": ["MLA862633783","MLA862633782"],
+    "amount": 46000
+}
+```
+======
+
+# Instalación del programa 
 
 Este repositorio contiene el código del de una aplicación REST con funcionalidad especifica 
 
@@ -26,7 +48,7 @@ go install github.com/couponmanager
 
 ## de acuerdo a el archivo de configuracion el servicio queda expuesto en el puerto 8080.
 EXPOSE 8080
-
+======
 
 ##  carpetas:
 
