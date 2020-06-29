@@ -7,15 +7,15 @@ https://coupon-281723.uc.r.appspot.com/coupon/
 #### Request body json
 ```
 {
-        "item_ids": ["MLA862633782", "MLA862633781"],
-        "amount":400000
+        "item_ids": ["MLA862633782", "MLA862633781","MLA862633783"],
+        "amount":46000
 }
 ```
 #### Response
 ```
 {
-    "item_ids": ["MLA862633781","MLA862633782"],
-    "amount": 400000
+    "item_ids": ["MLA862633783","MLA862633782"],
+    "amount": 46000
 }
 ```
 ======
