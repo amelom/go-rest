@@ -1,4 +1,4 @@
-# consumo API
+# Consumo API
 
 ### POST
 ```
